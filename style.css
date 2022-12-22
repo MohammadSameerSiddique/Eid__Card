@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: #D8F8FC;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container img{
+    width: 40%;
+    height: 40vh;
+}
+.section{
+    margin: 3% 10%;
+    padding-bottom: 20px;
+}
+.section img{
+    width: 80%;
+    height: 80vh;
+    border-radius: 10px;
+}
+.heading{
+    text-align: center;
+    background: #D8F8FC;
+    padding: 20px;
+}
+.heading h1{
+    font-size: 4rem;
+    /* border-bottom: 2px solid #F3CD9D; */
+}
+.heading p{
+    font-size: 1.5rem;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D8F8FC;
+
+    /* background: #000; */
+}
+.countain{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    /* background-color: aqua; */
+
+}
+.countain .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.countain .card:hover{
+    height: 420px;
+}
+.countain .card .image{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+}
+.countain .card .image img{
+   max-width: 100%;
+   border-radius: 4px;
+   width: 80%;
+   height: 35vh;
+   margin-left: 10px;
+}
+.countain .card .text{
+    position: relative;
+    margin-top: -140px ;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    
+}
+.countain .card:hover .text{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+.counter{
+    display: flex;
+}
+.counter div{
+    flex-basis: 100px;
+}
+.counter div p{
+    font-size: 30px;
+    margin-bottom: -8px;
+}
+
+
+
+@media only screen and (max-width: 370px) {
+    .container img{
+        width: 60%;
+        height: 20vh;
+    }
+   .section img{
+        width: 30%;
+        height: 30vh;
+        border-radius: 10px;
+    }
+    .heading{
+        text-align: center;
+    }
+    .heading h1{
+        font-size: 2rem;
+    }
+    .heading p{
+        font-size: 1rem;
+    }
+  }
